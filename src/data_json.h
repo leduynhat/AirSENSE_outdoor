@@ -1,4 +1,3 @@
-
 void createAndPrintJSON(data _send_data,char* names)
  {
     float co    = _send_data.co + _send_data.dot_co*0.01;

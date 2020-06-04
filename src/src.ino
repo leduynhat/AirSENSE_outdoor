@@ -2,7 +2,7 @@
 /*
   AirSENSE  
 
-  when pressing a pushbutton arduino starts "smart config"
+  When pressing a pushbutton arduino starts "smart config"
     The circuit:
   - sds011 sleeps from s0 until s30
   - read data at s0
@@ -13,6 +13,7 @@
   - note: successfully
   created 2019
   by Lê Duy Nhật <https://www.facebook.com/conca.bietbay.7>
+
   modified 04/06/2020
   by hocj2me- Lê Chí Tuyền
   
