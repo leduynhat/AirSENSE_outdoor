@@ -23,6 +23,7 @@
 #define f_data_size 20
 #define f_queue_size 5000    //f_data_size*num_data
 
+#define RESTART_PERIOD 86400000
 const char fileName[11]="/test4.txt";
 const long utcOffsetInSeconds = 3600*7; // UTC +7 
 
@@ -39,7 +40,7 @@ uint32_t lastGetTime = 0;
 uint32_t time2SendMessage = 0;
 //uint32_t lastCollectionData=0;
 //uint32_t macAddessDecimal;
-const char mqtt_server[15] = "23.89.159.119"; 
+const char mqtt_server[15] = "mqtt.airsense.vn";"23.89.159.119"; 
 const uint16_t mqtt_port = 1883;
 char topic[25];
 char espID[8];
@@ -96,8 +97,8 @@ struct data
     uint8_t dot_pm25=0;
     uint16_t pm10=0;
     uint8_t dot_pm10=0;
-	  uint16_t co=0;
-	  uint8_t dot_co=0;
+    uint16_t co=0;
+    uint8_t dot_co=0;
     uint8_t temp=0;
     uint8_t dot_temp=0;
     uint8_t hum=0;

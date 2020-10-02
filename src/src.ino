@@ -227,4 +227,8 @@ void processingData()
      PM2_5Sum = 0;
      PM10Sum = 0;
    }
+   if(millis() > RESTART_PERIOD)
+   {
+     ESP.restart();
+   }
  }
